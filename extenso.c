@@ -32,11 +32,10 @@ int* str_array_to_int_array(char entrada[]){
     }
     return vetor_numeros;
 }
-int main(){
+void main(){
     char entrada[501];
     fgets(entrada, 501, stdin);
     int *numeros = str_array_to_int_array(entrada);
     printf("%d\n", numeros[2]);
     free(numeros);
-    return 0;
 }
